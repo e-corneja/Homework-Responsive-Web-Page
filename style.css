@@ -1,0 +1,268 @@
+/* color #386887 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* HEADER */
+/**************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  padding: 0 4.8rem;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.15);
+}
+
+h1 {
+  color: #376f95;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+form {
+  display: flex;
+  padding: 0.8rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.input-container {
+  color: rgba(193, 190, 190, 0.279);
+}
+
+.search input {
+  font-size: 1.8rem;
+  width: 25rem;
+  height: 3rem;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  outline: none;
+}
+
+.search button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass {
+  font-size: 2rem;
+  color: #386887;
+}
+
+.fa-solid fa-magnifying-glass {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #999;
+  font-weight: 500;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #376f95;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.fa-bars {
+  font-size: 2.4rem;
+  color: #386887;
+}
+
+/**************************/
+/* SECTION CATEGORIES*/
+/**************************/
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 2.4rem;
+  color: #999;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.category-text {
+  font-size: 1.4rem;
+  color: #999;
+  cursor: pointer;
+}
+
+/**************************/
+/* SECTION PLACES*/
+/**************************/
+.place-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+.card {
+  padding: 1.6rem 0;
+  border-radius: 15px;
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  width: 260px;
+}
+
+.card-content {
+  padding-top: 1.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.card img {
+  width: 260px;
+  height: 180px;
+  /* margin-bottom: 1.8rem; */
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.title-rating {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.description {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+/**************************/
+/* SECTION FEATURED*/
+/**************************/
+.featured {
+  margin-bottom: 8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.featured-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: 20rem;
+  justify-content: space-between;
+}
+
+.featured-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.big-img {
+  grid-column-start: span 2;
+  grid-column-end: auto;
+  grid-row-start: span 2;
+  grid-row-end: auto;
+}
+
+/**************************/
+/* SECTION FEATURED*/
+/**************************/
+
+.popular {
+  margin-bottom: 8rem;
+}
+
+/**************************/
+/* FOOTER*/
+/**************************/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eeeeee;
+  padding: 2rem 4.8rem;
+}
+
+li {
+  list-style: none;
+}
+
+.left-menu {
+  display: flex;
+  gap: 4.8rem;
+  font-size: 1.6rem;
+}
+
+.right-menu {
+  display: flex;
+  gap: 4.8rem;
+  font-size: 1.6rem;
+}
